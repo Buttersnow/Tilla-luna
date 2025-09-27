@@ -1,18 +1,44 @@
+* {
+    box-sizing: border-box;
+}
 body { 
-    background-color: rgb(194, 189, 163);
+    background-color: rgb(98, 178, 221);
     color: rgb(0, 0, 14);
     font-family: "Varela Round", sans-serif;
     font-weight: 880;
     font-style: normal;
+    overflow-x: hidden;
+    margin: 0;
 
+}
+#navbar ul {
+    display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        list-style-type: none;
+        padding: 0;
+        margin: 20px;
+        justify-content: center;
 }
 #About,
 #Experience,
-#Connect {
+#Connect,
+#Skills,
+#Projects {
     margin-bottom: 40px;
     padding: 25px;
     background-color: white;
     border-radius: 8px;
+}
+#Experience ul {
+display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* space between items */
+    list-style-type: none;
+    /* remove bullet points */
+    padding: 0;
+    margin: 0;
 }
 #About, h1 {
     text-align: center;
@@ -21,4 +47,9 @@ h1 {
     color: rgb(170, 5, 5);
     font-weight: 1000;
     font-size: 65px;
+}
+#navbar ul {
+    max-width: 1200px;
+    margin: 20 auto;
+    padding: 0 20px;
 }
